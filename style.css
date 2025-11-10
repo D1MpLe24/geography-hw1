@@ -1,0 +1,152 @@
+/* ОБЩИЕ СТИЛИ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff; /* Очень светлый, почти белый голубой */
+    color: #333;
+}
+
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* ЗАГОЛОВОК (HEADER) */
+header {
+    background-color: #007bb5; /* Насыщенный синий (цвет океана) */
+    color: white;
+    padding: 40px 0 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+/* СЕКЦИИ КОНТЕНТА (SECTION) */
+.content-block {
+    margin-bottom: 30px;
+    padding: 20px;
+    border-left: 5px solid #00aaff; /* Светло-голубая полоса слева */
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+h2 {
+    color: #005f99; /* Более темный синий для заголовков */
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+    margin-top: 0;
+    font-size: 1.8em;
+}
+
+/* ЗОНЫ ПРОБЛЕМ И РЕШЕНИЙ */
+
+/* Проблемы (danger-zone) - акцент на опасность */
+.danger-zone {
+    border-left-color: #e74c3c; /* Красный цвет */
+    background-color: #fff0f0; /* Очень светлый розовый */
+}
+
+/* Решения (safe-zone) - акцент на позитив */
+.safe-zone {
+    border-left-color: #2ecc71; /* Зеленый цвет */
+    background-color: #f0fff5; /* Очень светлый зеленый */
+}
+
+/* СТИЛИ ДЛЯ СПИСКОВ ВНУТРИ РАЗДЕЛОВ (UL) */
+.content-block ul {
+    list-style: none; /* Убираем стандартные маркеры */
+    padding: 0;
+    margin: 15px 0;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px dashed #cccccc;
+}
+
+.content-block ul li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 8px;
+    font-weight: bold; /* Выделяем ключевые пункты */
+}
+
+.content-block ul li::before {
+    content: '→'; /* Заменяем маркер на стрелку */
+    position: absolute;
+    left: 0;
+    color: #007bb5;
+    font-size: 1.2em;
+    top: -2px;
+}
+
+/* ПОДВАЛ (FOOTER) */
+footer {
+    background-color: #34495e; /* Темный серо-синий */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer h2 {
+    color: white;
+    border-bottom-color: white;
+    font-size: 1.5em;
+}
+
+.group-info {
+    font-size: 0.9em;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+/* ПОДВАЛ (FOOTER) */
+footer {
+    background-color: #2c3e50; /* чуть темнее для контраста */
+    color: #ffffff; /* белый текст */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Блок внутри футера */
+footer .content-block {
+    background-color: rgba(255, 255, 255, 0.1); /* лёгкая прозрачность */
+    border-left: 4px solid #00aaff;
+    color: #ffffff; /* делаем текст полностью белым */
+    border-radius: 6px;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    line-height: 1.8;
+}
+
+/* Заголовок заключения */
+footer h2 {
+    color: #00c3ff;
+    border-bottom: 2px solid #00c3ff;
+    font-size: 1.8em;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+/* Дополнительная информация о группе */
+footer .group-info {
+    font-size: 0.9em;
+    margin-top: 10px;
+    opacity: 0.85;
+    color: #dfe6e9;
+}
